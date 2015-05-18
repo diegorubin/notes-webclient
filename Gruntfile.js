@@ -68,11 +68,18 @@ module.exports = function(grunt) {
                 livereload: true
             },
 			js: {
-				files: [ 'Gruntfile.js', 'js/notes.js' ],
+				files: [ 
+                                  'Gruntfile.js', 
+                                  'js/notes.js',
+                                  'node_modules/codemirror/lib/codemirror.js'
+                                ],
 				tasks: 'js'
 			},
 			css: {
-				files: [ 'css/notes.scss' ],
+				files: [ 
+                                  'css/notes.scss' 
+                                  'node_modules/codemirror/lib/codemirror.css'
+                                ],
 				tasks: 'css-core'
 			},
             html: {
