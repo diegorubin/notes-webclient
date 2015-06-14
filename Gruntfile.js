@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: [ 
-                                  'css/notes.scss' 
+                                  'css/notes.scss',
                                   'node_modules/codemirror/lib/codemirror.css'
                                 ],
 				tasks: 'css-core'
