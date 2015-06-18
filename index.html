@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/images/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Notes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -55,10 +55,36 @@
           <h1 class="page-header">
             <span id="location">Dashboard</span>
             <span id="commands" class="right">
-              <a href="#" id="new-note" class="btn btn-primary">Nova Nota</a>
+              <button type="button" class="btn btn-primary btn-lg"
+                  data-toggle="modal" data-target="#note-modal">
+                Nova Nota
+              </button>
             </span>
           </h1>
 
+        </div>
+      </div>
+    </div>
+
+    <!-- modals -->
+    <div class="modal fade" id="note-modal" tabindex="-1" role="dialog"
+        aria-labelledby="noteLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="noteLabel">Nova Nota</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default"
+                data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
         </div>
       </div>
     </div>
