@@ -1,7 +1,8 @@
 var app = app || {};
 
 app.NotesDashboardView = Backbone.View.extend({
-  el: $('body'),
+  el: $('#main-container'),
+  template: $('#dashboard').html(),
 
   initialize: function() {
   },
@@ -12,7 +13,14 @@ app.NotesDashboardView = Backbone.View.extend({
 
   newNote: function(e) {
     e.preventDefault();
-    alert("teste");
+    var formView = new app.NotesFormView();
+    formView.render();
+  },
+
+  render: function() {
+    var tmpl = _.template(this.template);
+    this.$el.html(tmpl());
+    return this;
   }
 
 });

@@ -49,24 +49,49 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 main">
-          <h1 class="page-header">
-            <span id="location">Dashboard</span>
-            <span id="commands" class="right">
-              <button id="note-new" type="button" class="btn btn-primary"
-                  data-toggle="view" data-target="#edit-view">
-                Nova Nota
-              </button>
-            </span>
-          </h1>
-
-        </div>
-      </div>
+    <div id="main-container">
     </div>
 
     <!-- templates -->
+    <template id="dashboard">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 main">
+            <h1 class="page-header">
+              <span id="location">Dashboard</span>
+              <span id="commands" class="right">
+                <button id="note-new" type="button" class="btn btn-primary"
+                    data-toggle="view" data-target="#edit-view">
+                  Nova Nota
+                </button>
+              </span>
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="view-note-form">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 main">
+            <h1 class="page-header">
+              <span id="location">Nova Nota</span>
+              <span id="commands" class="right">
+                <button id="note-cancel" type="button" class="btn btn-default">
+                  Cancelar
+                </button>
+                <button id="note-finish" type="button" class="btn btn-primary">
+                  Concluir
+                </button>
+              </span>
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </template>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>

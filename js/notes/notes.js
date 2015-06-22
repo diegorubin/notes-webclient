@@ -1,6 +1,7 @@
 var app = app || {};
 
 $(function(){
-  new app.NotesDashboardView();
+  var dashboardView = new app.NotesDashboardView();
+  dashboardView.render();
 });
 
