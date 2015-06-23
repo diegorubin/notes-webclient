@@ -22,6 +22,10 @@ app.NotesFormView = Backbone.View.extend({
   render: function() {
     var tmpl = _.template(this.template);
     this.$el.html(tmpl());
+    var textarea = document.getElementById("note-body");
+    var editor = CodeMirror.fromTextArea(textarea, {
+      lineNumbers: false, mode: 'markdown'
+    });
     return this;
   }
 

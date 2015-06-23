@@ -69,3 +69,14 @@ body {
   float: right;
 }
 
+/*
+ * note form
+ */
+#note-title {
+  border: 0;
+}
+
+#note-body {
+  width: 48%;
+  height: 75vh;
+}

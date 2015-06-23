@@ -77,7 +77,8 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 main">
             <h1 class="page-header">
-              <span id="location">Nova Nota</span>
+              <input id="note-title" type="text" name="note-title"
+                  placeholder="Nova Nota"/>
               <span id="commands" class="right">
                 <button id="note-cancel" type="button" class="btn btn-default">
                   Cancelar
@@ -88,6 +89,8 @@
               </span>
             </h1>
 
+            <textarea id="note-body"></textarea>
+
           </div>
         </div>
       </div>
@@ -96,6 +99,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/markdown/markdown.js"></script>
 
     <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/backbone/backbone.js"></script>
