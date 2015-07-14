@@ -5,6 +5,8 @@ app.NotesDashboardView = Backbone.View.extend({
   template: $('#dashboard').html(),
 
   initialize: function() {
+    this.notes = new app.NotesCollection();
+    this.notes.fetch();
   },
 
   events: {
